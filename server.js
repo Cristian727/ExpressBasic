@@ -4,7 +4,7 @@ const path =  require("path")
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/saludo', (req, res) => {
+app.get('/query_parameters', (req, res) => {
     const nombre = req.query.nombre;
     res.send(`Hola, ${nombre}!`);
 });
